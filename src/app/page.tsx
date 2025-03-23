@@ -1,3 +1,4 @@
+import DailyTasksList from "@/components/DailyTasksList";
 import TaskCheckbox from "@/components/TaskCheckbox";
 
 export default function Home() {
@@ -25,10 +26,14 @@ export default function Home() {
   ]
   return (
     <div className="flex justify-center">
-      <div className="basis-10/12 flex flex-col gap-2">
-        <div>Daily tasks</div>
-        <hr />
-        {taskList.map((task, i) => <TaskCheckbox key={i} task={task} />)}
+      <div className="flex gap-4 basis-10/12">
+        <div className="basis-1/2">
+          <DailyTasksList taskList={taskList}/>
+        </div>
+        <div className="basis-1/2">
+          {/* TODO: replace w/ a by topic 5-day streak card */}
+          <DailyTasksList taskList={taskList}/>
+        </div>
       </div>
     </div>
   );

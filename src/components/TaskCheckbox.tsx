@@ -1,6 +1,6 @@
 import { FaCheck, FaArrowUpRightFromSquare, FaX } from "react-icons/fa6";
 
-export default function TaskCheckbox({ task } : { task: StudyTask }) {
+export default ({ task } : { task: StudyTask }) => {
   
   return (
     <div className="border-solid border-1 rounded-sm bg-white p-2 flex gap-2 items-center">
