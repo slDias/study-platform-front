@@ -5,7 +5,7 @@ export default ({ task } : { task: StudyTask }) => {
   return (
     <div className="border-solid border-1 rounded-sm bg-white p-2 flex gap-2 items-center">
       <div>
-        {task.isFinished ? <FaCheck color="green"/> : <FaX color="red"/>}
+        {task.isFinished ? <FaCheck color="green"/> : <input type="checkbox" />}
       </div>
       <div className="grow">
         {task.title}
