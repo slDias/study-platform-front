@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "A personal studies tracking platform",
 };
 
-type RootLayoutProps = Readonly<{ children: React.ReactNode;}>
+type RootLayoutProps = Readonly<{ children: React.ReactNode; }>
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (

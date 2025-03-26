@@ -1,5 +1,6 @@
-export function GET() {
-  return Response.json([
+
+export function getData() {
+  return [
     {
       title: "A task title",
       isFinished: true,
@@ -14,5 +15,9 @@ export function GET() {
       title: "A 3rd and final task title",
       isFinished: true,
     },
-  ])
+  ]
+}
+
+export function GET() {
+  return Response.json(getData())
 }

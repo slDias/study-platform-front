@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-export default () => {
-  const [taskList, setTaskList] = useState<Array<StudyTask>>([])
+export default (initialData: Array<StudyTask>) => {
+  const [taskList, setTaskList] = useState(initialData)
 
   const getTaskList = async () => {
     const res = await fetch("/api/task")
