@@ -7,12 +7,11 @@ type NavButtonProps = {
 
 // TODO: is it possible to have onclick on a server component?
 const NavButton = ({label, route}: NavButtonProps) => (
-  <div 
-    className="hover:bg-slate-200 hover:cursor-pointer px-2 rounded"
+  <button className="px-2 rounded-xs"
     onClick={() => console.log(route)}
   >
     {label}
-  </div>
+  </button>
 )
 
 export default () => {
