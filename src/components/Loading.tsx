@@ -1,3 +1,5 @@
-export default (props: React.HTMLProps<HTMLDivElement>) => {
-  return <div {...props}>Loading</div>
-}
+export default (props: React.HTMLProps<HTMLDivElement>) => (
+  <div {...props}>
+    Loading
+  </div>
+)

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-
+.sp-button,
 button {
-    @apply hover:bg-slate-200 active:inset-shadow-sm hover:cursor-pointer;
+    @apply hover:bg-slate-200 active:inset-shadow-sm hover:cursor-pointer
 }
 
 :root {

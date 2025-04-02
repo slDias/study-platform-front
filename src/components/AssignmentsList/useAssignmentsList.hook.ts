@@ -1,7 +1,8 @@
+import { Assignment } from "@/lib/interfaces"
 import { useState } from "react"
 
-export default function useTaskList(initialTaskList: Array<StudyTask>){
-  const [taskList, setTaskList] = useState<Array<StudyTask>>(initialTaskList)
+export default (initialAssignmentList: Array<Assignment>) => {
+  const [taskList, setTaskList] = useState<Array<Assignment>>(initialAssignmentList)
   const [isLoading, setLoading] = useState(false)
 
   const getTaskList = async () => {
